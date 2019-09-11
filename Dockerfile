@@ -18,7 +18,7 @@ EXPOSE 8080
 EXPOSE 8081
 
 ENTRYPOINT [ "dumb-init", "--", "docker-entrypoint.sh" ]
-CMD        [ "mitmdump", "--mode transparent", "--showhost", "--ssl-insecure", "--anticomp" ]
+CMD        [ "mitmdump", "--mode transparent", "--showhost" ]
 
 # Prepare APT dependencies
 RUN set -ex \
