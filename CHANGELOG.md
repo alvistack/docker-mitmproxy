@@ -4,6 +4,8 @@
 
 ### Major Changes
 
+  - Default with Python 3
+
 ## 4.0.4-0alvistack1 - 2019-09-11
 
   - Ubuntu 18.04 based
