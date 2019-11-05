@@ -24,7 +24,7 @@ Start mitmproxy:
 
     # Pull latest image
     docker pull alvistack/mitmproxy
-
+    
     # Run as detach
     docker run \
         -itd \
