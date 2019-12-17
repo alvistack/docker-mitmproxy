@@ -12,6 +12,7 @@ Learn more about mitmproxy: <https://docs.mitmproxy.org/>
 ## Supported Tags and Respective `Dockerfile` Links
 
   - [`latest` (master/Dockerfile)](https://github.com/alvistack/docker-mitmproxy/blob/master/Dockerfile)
+  - [`5.0` (5.0/Dockerfile)](https://github.com/alvistack/docker-mitmproxy/blob/5.0/Dockerfile)
   - [`4.0` (4.0/Dockerfile)](https://github.com/alvistack/docker-mitmproxy/blob/4.0/Dockerfile)
 
 ## Overview
@@ -24,7 +25,7 @@ Start mitmproxy:
 
     # Pull latest image
     docker pull alvistack/mitmproxy
-
+    
     # Run as detach
     docker run \
         -itd \
