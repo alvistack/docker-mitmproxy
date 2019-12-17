@@ -19,6 +19,8 @@ ENV LC_ALL "en_US.utf8"
 ENV SHELL  "/bin/bash"
 ENV TZ     "UTC"
 
+ENV MITMPROXY_VERSION    "5.0.0"
+
 EXPOSE 8080
 EXPOSE 8081
 
