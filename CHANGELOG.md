@@ -1,8 +1,14 @@
 # Docker Image Packaging for mitmproxy
 
-## 4.0.4-XalvistackY - TBC
+## 5.0.1-XalvistackY - TBC
 
 ### Major Changes
+
+## 5.0.1-2alvistack1 - 2019-12-28
+
+### Major Changes
+
+  - Add 5.0 support
 
 ## 4.0.4-2alvistack3 - 2019-11-05
 
