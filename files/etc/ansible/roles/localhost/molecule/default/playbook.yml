@@ -29,5 +29,4 @@
   remote_user: root
   roles:
     - role: mitmproxy
-      mitmproxy_version: "{{ lookup('env', 'MITMPROXY_VERSION') }}"
     - role: localhost
