@@ -24,7 +24,7 @@ ENV MITMPROXY_VERSION "5.0.1"
 EXPOSE 8080
 EXPOSE 8081
 
-ENTRYPOINT [ "dumb-init", "--", "docker-entrypoint.sh" ]
+ENTRYPOINT [ "tini", "-g", "--", "docker-entrypoint.sh" ]
 CMD        [ "mitmdump", "--mode transparent", "--showhost" ]
 
 # Hotfix for en_US.utf8 locale
