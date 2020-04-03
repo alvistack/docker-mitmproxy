@@ -1,6 +1,6 @@
 # Docker Image Packaging for mitmproxy
 
-[![Travis](https://img.shields.io/travis/alvistack/docker-mitmproxy.svg)](https://travis-ci.org/alvistack/docker-mitmproxy)
+[![Travis](https://img.shields.io/travis/com/alvistack/docker-mitmproxy.svg)](https://travis-ci.com/alvistack/docker-mitmproxy)
 [![GitHub release](https://img.shields.io/github/release/alvistack/docker-mitmproxy.svg)](https://github.com/alvistack/docker-mitmproxy/releases)
 [![GitHub license](https://img.shields.io/github/license/alvistack/docker-mitmproxy.svg)](https://github.com/alvistack/docker-mitmproxy/blob/master/LICENSE)
 [![Docker Pulls](https://img.shields.io/docker/pulls/alvistack/mitmproxy.svg)](https://hub.docker.com/r/alvistack/mitmproxy/)
@@ -48,7 +48,7 @@ The `latest` tag matches the most recent [GitHub Release](https://github.com/alv
 
 ### `alvistack/mitmproxy:<version>`
 
-The version tags are rolling release rebuild by [Travis](https://travis-ci.org/alvistack/docker-mitmproxy) in weekly basis. Thus using these tags will ensure you are running the latest packages provided by the base image project.
+The version tags are rolling release rebuild by [Travis](https://travis-ci.com/alvistack/docker-mitmproxy) in weekly basis. Thus using these tags will ensure you are running the latest packages provided by the base image project.
 
 ## License
 
