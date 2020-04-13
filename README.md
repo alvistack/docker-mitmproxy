@@ -12,7 +12,6 @@ Learn more about mitmproxy: <https://docs.mitmproxy.org/>
 ## Supported Tags and Respective `Dockerfile` Links
 
   - [`5.0`, `latest`](https://github.com/alvistack/docker-mitmproxy/blob/master/molecule/5.0/Dockerfile.j2)
-  - [`4.0`](https://github.com/alvistack/docker-mitmproxy/blob/master/molecule/4.0/Dockerfile.j2)
 
 ## Overview
 
