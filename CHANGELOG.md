@@ -4,6 +4,10 @@
 
 ### Major Changes
 
+## 5.1.1-4alvistack2 - 2020-06-10
+
+### Major Changes
+
   - Revamp `create`, `side_effect`, `verify` and `destroy` logic
   - Install with static binary archive
   - Replace `tini` with `catatonit`
