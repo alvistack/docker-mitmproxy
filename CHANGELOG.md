@@ -1,6 +1,6 @@
 # Docker Image Packaging for mitmproxy
 
-## 5.1.1-XalvistackY - TBC
+## 5.2.0-XalvistackY - TBC
 
 ### Major Changes
 
