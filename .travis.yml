@@ -8,6 +8,7 @@ language: shell
 
 env:
   jobs:
+    - MOLECULE_SCENARIO_NAME="5.2"
     - MOLECULE_SCENARIO_NAME="5.1"
 
 before_install:
