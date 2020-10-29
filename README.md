@@ -9,10 +9,10 @@ mitmproxy is an interactive man-in-the-middle proxy for HTTP and HTTPS with a co
 
 Learn more about mitmproxy: <https://docs.mitmproxy.org/>
 
-## Supported Tags and Respective `Dockerfile` Links
+## Supported Tags and Respective Packer Template Links
 
-  - [`5.2`, `latest`](https://github.com/alvistack/docker-mitmproxy/blob/master/molecule/5.2/Dockerfile.j2)
-  - [`5.1`](https://github.com/alvistack/docker-mitmproxy/blob/master/molecule/5.1/Dockerfile.j2)
+  - [`5.2`, `latest`](https://github.com/alvistack/docker-mitmproxy/blob/master/packer/5.2/packer.json)
+  - [`5.1`](https://github.com/alvistack/docker-mitmproxy/blob/master/packer/5.1/packer.json)
 
 ## Overview
 
@@ -20,8 +20,7 @@ This Docker container makes it easy to get an instance of mitmproxy up and runni
 
 Based on [Official Ubuntu Docker Image](https://hub.docker.com/_/ubuntu/) with some minor hack:
 
-  - Minimized `Dockerfile` for meta data definition
-  - Provision by Ansible and Molecule Docker driver in single layer
+  - Packaging by Packer Docker builder and Ansible provisioner in single layer
   - Handle `ENTRYPOINT` with [catatonit](https://github.com/openSUSE/catatonit)
 
 ### Quick Start
