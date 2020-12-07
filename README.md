@@ -11,8 +11,8 @@ Learn more about mitmproxy: <https://docs.mitmproxy.org/>
 
 ## Supported Tags and Respective Packer Template Links
 
-  - [`5.2`, `latest`](https://github.com/alvistack/docker-mitmproxy/blob/master/packer/5.2/packer.json)
-  - [`5.1`](https://github.com/alvistack/docker-mitmproxy/blob/master/packer/5.1/packer.json)
+  - [`5.2`, `latest`](https://github.com/alvistack/docker-mitmproxy/blob/master/packer/docker-5.2/packer.json)
+  - [`5.1`](https://github.com/alvistack/docker-mitmproxy/blob/master/packer/docker-5.1/packer.json)
 
 ## Overview
 
