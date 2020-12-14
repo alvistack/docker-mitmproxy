@@ -68,14 +68,8 @@ default:
   before_script:
     - *script-git-submodule
 
-docker-5.3:
+docker-6.0:
   <<: *job-packer
   variables:
     _PACKER_BUILDER_PROVIDER: "docker"
-    _PACKER_BUILDER_VERSION: "5.3"
-
-docker-5.2:
-  <<: *job-packer
-  variables:
-    _PACKER_BUILDER_PROVIDER: "docker"
-    _PACKER_BUILDER_VERSION: "5.2"
+    _PACKER_BUILDER_VERSION: "6.0"
