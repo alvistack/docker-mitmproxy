@@ -1,9 +1,9 @@
 # Docker Image Packaging for mitmproxy
 
-[![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/docker-mitmproxy/master)](https://gitlab.com/alvistack/docker-mitmproxy/-/pipelines)
+[![GitLab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/docker-mitmproxy/master)](https://gitlab.com/alvistack/docker-mitmproxy/-/pipelines)
 [![GitHub release](https://img.shields.io/github/release/alvistack/docker-mitmproxy.svg)](https://github.com/alvistack/docker-mitmproxy/releases)
 [![GitHub license](https://img.shields.io/github/license/alvistack/docker-mitmproxy.svg)](https://github.com/alvistack/docker-mitmproxy/blob/master/LICENSE)
-[![Docker Pulls](https://img.shields.io/docker/pulls/alvistack/mitmproxy.svg)](https://hub.docker.com/r/alvistack/mitmproxy/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/alvistack/mitmproxy-5.2.svg)](https://hub.docker.com/r/alvistack/mitmproxy-5.2)
 
 mitmproxy is an interactive man-in-the-middle proxy for HTTP and HTTPS with a console interface.
 
@@ -11,8 +11,10 @@ Learn more about mitmproxy: <https://docs.mitmproxy.org/>
 
 ## Supported Tags and Respective Packer Template Links
 
-  - [`5.2`, `latest`](https://github.com/alvistack/docker-mitmproxy/blob/master/packer/docker-5.2/packer.json)
-  - [`5.1`](https://github.com/alvistack/docker-mitmproxy/blob/master/packer/docker-5.1/packer.json)
+  - [`alvistack/mitmproxy-5.2`](https://hub.docker.com/r/alvistack/mitmproxy-5.2)
+      - [`packer/docker-5.2/packer.json`](https://github.com/alvistack/docker-mitmproxy/blob/master/packer/docker-5.2/packer.json)
+  - [`alvistack/mitmproxy-5.1`](https://hub.docker.com/r/alvistack/mitmproxy-5.1)
+      - [`packer/docker-5.1/packer.json`](https://github.com/alvistack/docker-mitmproxy/blob/master/packer/docker-5.1/packer.json)
 
 ## Overview
 
@@ -41,13 +43,13 @@ Start mitmproxy:
 
 ## Versioning
 
-### `alvistack/mitmproxy:latest`
+### `YYYYMMDD.Y.Z`
 
-The `latest` tag matches the most recent [GitHub Release](https://github.com/alvistack/docker-mitmproxy/releases) of this repository. Thus using `alvistack/mitmproxy:latest` or `alvistack/mitmproxy` will ensure you are running the most up to date stable version of this image.
+Release tags could be find from [GitHub Release](https://github.com/alvistack/docker-mitmproxy/releases) of this repository. Thus using these tags will ensure you are running the most up to date stable version of this image.
 
-### `alvistack/mitmproxy:<version>`
+### `YYYYMMDD.0.0`
 
-The version tags are rolling release rebuild by [Travis](https://travis-ci.com/alvistack/docker-mitmproxy) in weekly basis. Thus using these tags will ensure you are running the latest packages provided by the base image project.
+Version tags ended with `.0.0` are rolling release rebuild by [GitLab pipeline](https://gitlab.com/alvistack/docker-mitmproxy/-/pipelines) in weekly basis. Thus using these tags will ensure you are running the latest packages provided by the base image project.
 
 ## License
 
