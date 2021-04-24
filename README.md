@@ -28,14 +28,14 @@ Based on [Official Ubuntu Docker Image](https://hub.docker.com/_/ubuntu/) with s
 Start mitmproxy:
 
     # Pull latest image
-    docker pull alvistack/mitmproxy
+    docker pull alvistack/mitmproxy-6.0
     
     # Run as detach
     docker run \
         -itd \
         --name mitmproxy \
         --publish 8080:8080 \
-        alvistack/mitmproxy
+        alvistack/mitmproxy-6.0
 
 **Success**. mitmproxy is now available on port `8080`.
 
