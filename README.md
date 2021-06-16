@@ -4,7 +4,9 @@
 [![GitHub release](https://img.shields.io/github/release/alvistack/docker-mitmproxy.svg)](https://github.com/alvistack/docker-mitmproxy/releases)
 [![GitHub license](https://img.shields.io/github/license/alvistack/docker-mitmproxy.svg)](https://github.com/alvistack/docker-mitmproxy/blob/master/LICENSE)
 [![Docker Pulls](https://img.shields.io/docker/pulls/alvistack/mitmproxy-6.0.svg)](https://hub.docker.com/r/alvistack/mitmproxy-6.0)
+
 mitmproxy is an interactive man-in-the-middle proxy for HTTP and HTTPS with a console interface.
+
 Learn more about mitmproxy: <https://docs.mitmproxy.org/>
 
 ## Supported Tags and Respective Packer Template Links
@@ -15,6 +17,7 @@ Learn more about mitmproxy: <https://docs.mitmproxy.org/>
 ## Overview
 
 This Docker container makes it easy to get an instance of mitmproxy up and running.
+
 Based on [Official Ubuntu Docker Image](https://hub.docker.com/_/ubuntu/) with some minor hack:
 
   - Packaging by Packer Docker builder and Ansible provisioner in single layer
@@ -23,14 +26,17 @@ Based on [Official Ubuntu Docker Image](https://hub.docker.com/_/ubuntu/) with s
 ### Quick Start
 
 Start mitmproxy:
-\# Pull latest image
-docker pull alvistack/mitmproxy-6.0
-\# Run as detach
-docker run   
-\-itd   
-\--name mitmproxy   
-\--publish 8080:8080   
-alvistack/mitmproxy-6.0
+
+    # Pull latest image
+    docker pull alvistack/mitmproxy-6.0
+    
+    # Run as detach
+    docker run \
+        -itd \
+        --name mitmproxy \
+        --publish 8080:8080 \
+        alvistack/mitmproxy-6.0
+
 **Success**. mitmproxy is now available on port `8080`.
 
 ## Versioning
