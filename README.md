@@ -3,7 +3,7 @@
 <img src="/alvistack.svg" width="75" alt="AlviStack">
 
 [![GitLab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/docker-mitmproxy/master)](https://gitlab.com/alvistack/docker-mitmproxy/-/pipelines)
-[![GitHub release](https://img.shields.io/github/release/alvistack/docker-mitmproxy.svg)](https://github.com/alvistack/docker-mitmproxy/releases)
+[![GitHub tag](https://img.shields.io/github/tag/alvistack/docker-mitmproxy.svg)](https://github.com/alvistack/docker-mitmproxy/tags)
 [![GitHub license](https://img.shields.io/github/license/alvistack/docker-mitmproxy.svg)](https://github.com/alvistack/docker-mitmproxy/blob/master/LICENSE)
 [![Docker Pulls](https://img.shields.io/docker/pulls/alvistack/mitmproxy-7.0.svg)](https://hub.docker.com/r/alvistack/mitmproxy-7.0)
 
@@ -47,7 +47,7 @@ Start mitmproxy:
 
 ### `YYYYMMDD.Y.Z`
 
-Release tags could be find from [GitHub Release](https://github.com/alvistack/docker-mitmproxy/releases) of this repository. Thus using these tags will ensure you are running the most up to date stable version of this image.
+Release tags could be find from [GitHub Release](https://github.com/alvistack/docker-mitmproxy/tags) of this repository. Thus using these tags will ensure you are running the most up to date stable version of this image.
 
 ### `YYYYMMDD.0.0`
 
