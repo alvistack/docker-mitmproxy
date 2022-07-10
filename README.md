@@ -1,6 +1,6 @@
 # Docker Image Packaging for mitmproxy
 
-<img src="/alvistack.svg" width="75" alt="AlviStack">
+<a href="https://alvistack.com" title="AlviStack" target="_blank"><img src="/alvistack.svg" height="75" alt="AlviStack"></a>
 
 [![GitLab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/docker-mitmproxy/master)](https://gitlab.com/alvistack/docker-mitmproxy/-/pipelines)
 [![GitHub tag](https://img.shields.io/github/tag/alvistack/docker-mitmproxy.svg)](https://github.com/alvistack/docker-mitmproxy/tags)
