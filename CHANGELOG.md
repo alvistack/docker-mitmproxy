@@ -4,6 +4,8 @@
 
 ### Major Changes
 
+  - Revamp manually download related with OBS repo
+
 ## 20220824.1.1 - 2022-08-24
 
 ### Major Changes
