@@ -134,6 +134,45 @@ default:
   before_script:
     - *script-git-submodule
 
+build:mitmproxy-9.0-docker:
+  <<: *job-packer-build
+  stage: build
+  cache:
+    key: "$CI_PIPELINE_ID-mitmproxy-9.0-docker"
+    paths:
+      - packer/*/output-docker
+  variables:
+    _IMAGE: "mitmproxy-9.0"
+    _PROVIDER: "docker"
+
+test:mitmproxy-9.0-docker:
+  <<: *job-molecule-test
+  stage: test
+  cache:
+    key: "$CI_PIPELINE_ID-mitmproxy-9.0-docker"
+    paths:
+      - packer/*/output-docker
+    policy: pull
+  variables:
+    _IMAGE: "mitmproxy-9.0"
+    _PROVIDER: "docker"
+  needs:
+    - build:mitmproxy-9.0-docker
+
+deploy:mitmproxy-9.0-docker:
+  <<: *job-docker-push
+  stage: deploy
+  cache:
+    key: "$CI_PIPELINE_ID-mitmproxy-9.0-docker"
+    paths:
+      - packer/*/output-docker
+    policy: pull
+  variables:
+    _IMAGE: "mitmproxy-9.0"
+    _PROVIDER: "docker"
+  needs:
+    - test:mitmproxy-9.0-docker
+
 build:mitmproxy-8.1-docker:
   <<: *job-packer-build
   stage: build
@@ -172,42 +211,3 @@ deploy:mitmproxy-8.1-docker:
     _PROVIDER: "docker"
   needs:
     - test:mitmproxy-8.1-docker
-
-build:mitmproxy-8.0-docker:
-  <<: *job-packer-build
-  stage: build
-  cache:
-    key: "$CI_PIPELINE_ID-mitmproxy-8.0-docker"
-    paths:
-      - packer/*/output-docker
-  variables:
-    _IMAGE: "mitmproxy-8.0"
-    _PROVIDER: "docker"
-
-test:mitmproxy-8.0-docker:
-  <<: *job-molecule-test
-  stage: test
-  cache:
-    key: "$CI_PIPELINE_ID-mitmproxy-8.0-docker"
-    paths:
-      - packer/*/output-docker
-    policy: pull
-  variables:
-    _IMAGE: "mitmproxy-8.0"
-    _PROVIDER: "docker"
-  needs:
-    - build:mitmproxy-8.0-docker
-
-deploy:mitmproxy-8.0-docker:
-  <<: *job-docker-push
-  stage: deploy
-  cache:
-    key: "$CI_PIPELINE_ID-mitmproxy-8.0-docker"
-    paths:
-      - packer/*/output-docker
-    policy: pull
-  variables:
-    _IMAGE: "mitmproxy-8.0"
-    _PROVIDER: "docker"
-  needs:
-    - test:mitmproxy-8.0-docker
