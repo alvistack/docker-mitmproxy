@@ -13,10 +13,10 @@ Learn more about mitmproxy: <https://docs.mitmproxy.org/>
 
 ## Supported Tags and Respective Packer Template Links
 
-  - [`alvistack/mitmproxy-9.0`](https://hub.docker.com/r/alvistack/mitmproxy-9.0)
-      - [`packer/docker-9.0/packer.json`](https://github.com/alvistack/docker-mitmproxy/blob/master/packer/docker-9.0/packer.json)
-  - [`alvistack/mitmproxy-8.1`](https://hub.docker.com/r/alvistack/mitmproxy-8.1)
-      - [`packer/docker-8.1/packer.json`](https://github.com/alvistack/docker-mitmproxy/blob/master/packer/docker-8.1/packer.json)
+-   [`alvistack/mitmproxy-9.0`](https://hub.docker.com/r/alvistack/mitmproxy-9.0)
+    -   [`packer/docker-9.0/packer.json`](https://github.com/alvistack/docker-mitmproxy/blob/master/packer/docker-9.0/packer.json)
+-   [`alvistack/mitmproxy-8.1`](https://hub.docker.com/r/alvistack/mitmproxy-8.1)
+    -   [`packer/docker-8.1/packer.json`](https://github.com/alvistack/docker-mitmproxy/blob/master/packer/docker-8.1/packer.json)
 
 ## Overview
 
@@ -24,8 +24,8 @@ This Docker container makes it easy to get an instance of mitmproxy up and runni
 
 Based on [Official Ubuntu Docker Image](https://hub.docker.com/_/ubuntu/) with some minor hack:
 
-  - Packaging by Packer Docker builder and Ansible provisioner in single layer
-  - Handle `ENTRYPOINT` with [catatonit](https://github.com/openSUSE/catatonit)
+-   Packaging by Packer Docker builder and Ansible provisioner in single layer
+-   Handle `ENTRYPOINT` with [catatonit](https://github.com/openSUSE/catatonit)
 
 ### Quick Start
 
@@ -33,7 +33,7 @@ Start mitmproxy:
 
     # Pull latest image
     docker pull alvistack/mitmproxy-9.0
-    
+
     # Run as detach
     docker run \
         -itd \
@@ -55,11 +55,11 @@ Version tags ended with `.0.0` are rolling release rebuild by [GitLab pipeline](
 
 ## License
 
-  - Code released under [Apache License 2.0](LICENSE)
-  - Docs released under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)
+-   Code released under [Apache License 2.0](LICENSE)
+-   Docs released under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)
 
 ## Author Information
 
-  - Wong Hoi Sing Edison
-      - <https://twitter.com/hswong3i>
-      - <https://github.com/hswong3i>
+-   Wong Hoi Sing Edison
+    -   <https://twitter.com/hswong3i>
+    -   <https://github.com/hswong3i>
