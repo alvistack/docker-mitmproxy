@@ -134,6 +134,45 @@ default:
     - *script-git-submodule
     - *script-linters
 
+build:mitmproxy-10.4-docker:
+  <<: *job-packer-build
+  stage: build
+  cache:
+    key: $CI_PIPELINE_ID-mitmproxy-10.4-docker
+    paths:
+      - packer/*/output-docker
+  variables:
+    _IMAGE: mitmproxy-10.4
+    _PROVIDER: docker
+
+test:mitmproxy-10.4-docker:
+  <<: *job-molecule-test
+  stage: test
+  cache:
+    key: $CI_PIPELINE_ID-mitmproxy-10.4-docker
+    paths:
+      - packer/*/output-docker
+    policy: pull
+  variables:
+    _IMAGE: mitmproxy-10.4
+    _PROVIDER: docker
+  needs:
+    - build:mitmproxy-10.4-docker
+
+deploy:mitmproxy-10.4-docker:
+  <<: *job-docker-push
+  stage: deploy
+  cache:
+    key: $CI_PIPELINE_ID-mitmproxy-10.4-docker
+    paths:
+      - packer/*/output-docker
+    policy: pull
+  variables:
+    _IMAGE: mitmproxy-10.4
+    _PROVIDER: docker
+  needs:
+    - test:mitmproxy-10.4-docker
+
 build:mitmproxy-10.3-docker:
   <<: *job-packer-build
   stage: build
@@ -172,42 +211,3 @@ deploy:mitmproxy-10.3-docker:
     _PROVIDER: docker
   needs:
     - test:mitmproxy-10.3-docker
-
-build:mitmproxy-10.2-docker:
-  <<: *job-packer-build
-  stage: build
-  cache:
-    key: $CI_PIPELINE_ID-mitmproxy-10.2-docker
-    paths:
-      - packer/*/output-docker
-  variables:
-    _IMAGE: mitmproxy-10.2
-    _PROVIDER: docker
-
-test:mitmproxy-10.2-docker:
-  <<: *job-molecule-test
-  stage: test
-  cache:
-    key: $CI_PIPELINE_ID-mitmproxy-10.2-docker
-    paths:
-      - packer/*/output-docker
-    policy: pull
-  variables:
-    _IMAGE: mitmproxy-10.2
-    _PROVIDER: docker
-  needs:
-    - build:mitmproxy-10.2-docker
-
-deploy:mitmproxy-10.2-docker:
-  <<: *job-docker-push
-  stage: deploy
-  cache:
-    key: $CI_PIPELINE_ID-mitmproxy-10.2-docker
-    paths:
-      - packer/*/output-docker
-    policy: pull
-  variables:
-    _IMAGE: mitmproxy-10.2
-    _PROVIDER: docker
-  needs:
-    - test:mitmproxy-10.2-docker

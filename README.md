@@ -9,7 +9,7 @@ tag](https://img.shields.io/github/tag/alvistack/docker-mitmproxy.svg)](https://
 [![GitHub
 license](https://img.shields.io/github/license/alvistack/docker-mitmproxy.svg)](https://github.com/alvistack/docker-mitmproxy/blob/master/LICENSE)
 [![Docker
-Pulls](https://img.shields.io/docker/pulls/alvistack/mitmproxy-10.3.svg)](https://hub.docker.com/r/alvistack/mitmproxy-10.3)
+Pulls](https://img.shields.io/docker/pulls/alvistack/mitmproxy-10.4.svg)](https://hub.docker.com/r/alvistack/mitmproxy-10.4)
 
 mitmproxy is an interactive man-in-the-middle proxy for HTTP and HTTPS
 with a console interface.
@@ -18,10 +18,10 @@ Learn more about mitmproxy: <https://docs.mitmproxy.org/>
 
 ## Supported Tags and Respective Packer Template Links
 
+- [`alvistack/mitmproxy-10.4`](https://hub.docker.com/r/alvistack/mitmproxy-10.4)
+  - [`packer/docker-10.4/packer.json`](https://github.com/alvistack/docker-mitmproxy/blob/master/packer/docker-10.4/packer.json)
 - [`alvistack/mitmproxy-10.3`](https://hub.docker.com/r/alvistack/mitmproxy-10.3)
   - [`packer/docker-10.3/packer.json`](https://github.com/alvistack/docker-mitmproxy/blob/master/packer/docker-10.3/packer.json)
-- [`alvistack/mitmproxy-10.2`](https://hub.docker.com/r/alvistack/mitmproxy-10.2)
-  - [`packer/docker-10.2/packer.json`](https://github.com/alvistack/docker-mitmproxy/blob/master/packer/docker-10.2/packer.json)
 
 ## Overview
 
@@ -41,14 +41,14 @@ Image](https://hub.docker.com/_/ubuntu/) with some minor hack:
 Start mitmproxy:
 
     # Pull latest image
-    docker pull alvistack/mitmproxy-10.3
+    docker pull alvistack/mitmproxy-10.4
 
     # Run as detach
     docker run \
         -itd \
         --name mitmproxy \
         --publish 8080:8080 \
-        alvistack/mitmproxy-10.3
+        alvistack/mitmproxy-10.4
 
 **Success**. mitmproxy is now available on port `8080`.
 
