@@ -25,7 +25,7 @@
       ansible.builtin.shell:
         cmd: |
           set -euxo pipefail
-          /usr/local/bin/docker-entrypoint.sh mitmdump --mode transparent --showhost
+          /usr/local/bin/docker-entrypoint.sh mitmdump
       args:
         executable: /bin/bash
       async: 300
