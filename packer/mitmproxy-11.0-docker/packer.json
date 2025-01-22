@@ -9,7 +9,7 @@
         "EXPOSE 8080",
         "EXPOSE 8081",
         "ENTRYPOINT [\"catatonit\", \"-g\", \"--\", \"docker-entrypoint.sh\"]",
-        "CMD [\"mitmdump\", \"--mode transparent\", \"--showhost\"]"
+        "CMD [\"mitmdump\"]"
       ],
       "commit": true,
       "image": "ubuntu:24.04",
